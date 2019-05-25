@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sunrise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRH-Bz-TbM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="cSG-SK-Gx6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3004"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKc-l2-Ss8" userLabel="red">
+                                        <rect key="frame" x="101" y="703" width="68" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="RedBalloon"/>
+                                        <connections>
+                                            <action selector="noteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuC-9D-6ck"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egy-Lo-RdX" userLabel="orange">
+                                        <rect key="frame" x="265" y="739" width="75" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="OrangeBalloon"/>
+                                        <connections>
+                                            <action selector="noteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYO-MT-7wG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLN-dn-RWB" userLabel="yellow">
+                                        <rect key="frame" x="30" y="620" width="66" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="YellowBallon"/>
+                                        <connections>
+                                            <action selector="noteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wS3-60-lEa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4h-6y-DYq" userLabel="pink">
+                                        <rect key="frame" x="107" y="500" width="57" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="PinkBalloon"/>
+                                        <connections>
+                                            <action selector="noteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V8p-lZ-wAj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNp-Rs-fUO" userLabel="purple">
+                                        <rect key="frame" x="252" y="520" width="66" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="PurpleBalloon"/>
+                                        <connections>
+                                            <action selector="noteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2L-Ql-F3G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t64-uS-boE" userLabel="green">
+                                        <rect key="frame" x="174" y="622" width="61" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="greenBalloon"/>
+                                        <connections>
+                                            <action selector="noteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lt3-PU-0Pc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRR-Yl-ZEW" userLabel="blue">
+                                        <rect key="frame" x="320" y="593" width="63" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="BlueBalloon"/>
+                                        <connections>
+                                            <action selector="noteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ihg-mc-gLE"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="landDark" translatesAutoresizingMaskIntoConstraints="NO" id="Pl0-R2-oGt">
+                                        <rect key="frame" x="-1" y="462" width="415" height="441"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="landLight" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-Qe-ErH" userLabel="mountain">
+                                        <rect key="frame" x="-2" y="462" width="415" height="441"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="NightBalloon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xIf-38-GRA">
+                                        <rect key="frame" x="100" y="500" width="71" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="NightBalloon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QqQ-L4-Ilg">
+                                        <rect key="frame" x="169" y="622" width="71" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="NightBalloon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDl-ad-IN0">
+                                        <rect key="frame" x="27" y="620" width="72" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="NightBalloon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mz-uG-l6u">
+                                        <rect key="frame" x="95" y="703" width="80" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="NightBalloon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XIN-aM-Mgx">
+                                        <rect key="frame" x="266" y="739" width="73" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="NightBalloon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1D-aK-DM3">
+                                        <rect key="frame" x="239" y="519" width="91" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="NightBalloon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ruL-qt-Jfn">
+                                        <rect key="frame" x="318" y="593" width="66" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="3000"/>
+                    <connections>
+                        <outlet property="landDark" destination="Pl0-R2-oGt" id="Xeq-Y8-ADz"/>
+                        <outlet property="landLight" destination="dqf-Qe-ErH" id="T9w-lQ-b7E"/>
+                        <outlet property="nightBallon1" destination="XIN-aM-Mgx" id="r9r-RQ-CGH"/>
+                        <outlet property="sunriseView" destination="cSG-SK-Gx6" id="vyG-00-nDI"/>
+                        <outletCollection property="noteButtons" destination="IKc-l2-Ss8" collectionClass="NSMutableArray" id="mrB-wo-GP0"/>
+                        <outletCollection property="noteButtons" destination="egy-Lo-RdX" collectionClass="NSMutableArray" id="9Kz-Rg-R2u"/>
+                        <outletCollection property="noteButtons" destination="DLN-dn-RWB" collectionClass="NSMutableArray" id="Wmo-vD-IpN"/>
+                        <outletCollection property="noteButtons" destination="t64-uS-boE" collectionClass="NSMutableArray" id="hjU-Sd-rnq"/>
+                        <outletCollection property="noteButtons" destination="l4h-6y-DYq" collectionClass="NSMutableArray" id="OCt-8i-EVE"/>
+                        <outletCollection property="noteButtons" destination="vRR-Yl-ZEW" collectionClass="NSMutableArray" id="d6y-fg-9ov"/>
+                        <outletCollection property="noteButtons" destination="oNp-Rs-fUO" collectionClass="NSMutableArray" id="cxG-3y-vle"/>
+                        <outletCollection property="nightBallon" destination="xIf-38-GRA" collectionClass="NSMutableArray" id="gIk-7k-3Xh"/>
+                        <outletCollection property="nightBallon" destination="QqQ-L4-Ilg" collectionClass="NSMutableArray" id="wsi-aV-Dp3"/>
+                        <outletCollection property="nightBallon" destination="xDl-ad-IN0" collectionClass="NSMutableArray" id="uGu-i7-y0V"/>
+                        <outletCollection property="nightBallon" destination="4Mz-uG-l6u" collectionClass="NSMutableArray" id="0zs-OR-N6e"/>
+                        <outletCollection property="nightBallon" destination="ruL-qt-Jfn" collectionClass="NSMutableArray" id="pEB-Ip-ifZ"/>
+                        <outletCollection property="nightBallon" destination="t1D-aK-DM3" collectionClass="NSMutableArray" id="POm-S7-AaS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="117.1875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlueBalloon" width="243" height="328"/>
+        <image name="NightBalloon" width="243" height="328"/>
+        <image name="OrangeBalloon" width="243" height="328"/>
+        <image name="PinkBalloon" width="243" height="328"/>
+        <image name="PurpleBalloon" width="243" height="328"/>
+        <image name="RedBalloon" width="243" height="328"/>
+        <image name="YellowBallon" width="243" height="328"/>
+        <image name="greenBalloon" width="243" height="328"/>
+        <image name="landDark" width="415" height="443"/>
+        <image name="landLight" width="415" height="443"/>
+        <image name="sky" width="412" height="2999"/>
+    </resources>
+</document>

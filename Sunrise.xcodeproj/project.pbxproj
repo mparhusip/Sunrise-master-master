@@ -23,7 +23,7 @@
 		52104C1722925FCD004AB8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52104C1A22925FCD004AB8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52104C1C22925FCD004AB8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52104C3822928B41004AB8BD /* SoundFile */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SoundFile; path = ../../../Music/SoundFile; sourceTree = "<group>"; };
+		52104C3822928B41004AB8BD /* SoundFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SoundFile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

@@ -85,7 +85,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             playSound()
             
         }else {
+            stopSound()
+            showAlert()
             counter = 0
+            
+            
         }
         
         
@@ -132,6 +136,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
        
+    }
+    
+    func stopSound() {
+        
+        player.stop()
+    }
+    
+    
+    func showAlert() {
+        
+        let alert = UIAlertController(title: "Title", message: "Message", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

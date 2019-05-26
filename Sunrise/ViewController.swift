@@ -44,8 +44,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var sunriseView: UIImageView!
     @IBOutlet weak var landDark: UIImageView!
     @IBOutlet weak var landLight: UIImageView!
-    @IBOutlet var nightBallon: [UIImageView]!
-    @IBOutlet weak var nightBallon1: UIImageView!
+
+
     
     let soundArray = [
         "note1", "note2", "note3",
@@ -62,14 +62,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        for note in noteButtons {
-//             note.layer.cornerRadius =
-//            note.frame.width/2
-//        }
+
         
         self.noteButtons[melody[counter]].alpha = 1
 
-       
     }
 
     @IBAction func noteButtonPressed(_ sender: UIButton) {
@@ -100,11 +96,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             })
         }
         
-        if self.sunriseView.center.y <= 800 {
-            UIView.animate(withDuration: 1) {
+        if self.sunriseView.center.y <= 500 {
+            UIView.animate(withDuration: 3) {
                 self.landDark.alpha = 0
                 self.landLight.alpha = 1
-                self.nightBallon1.alpha = 0
+
             
             }
         }
